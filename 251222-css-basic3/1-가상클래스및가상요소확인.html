@@ -85,11 +85,19 @@
 
         /* .menu-item 뒤(after)에 가짜 공간을 만들고 별표를 넣음 */
         .menu-item::after {
-            content: '★';
+            content: '★::after 효과';
             /* 내용 필수! */
             color: red;
             /* 빨간색 별 */
             margin-left: 5px;
+        }
+
+        .menu-item::before {
+            content: '★::before 효과';
+            /* 내용 필수! */
+            color: blue;
+            /* 빨간색 별 */
+            margin-right: 5px;
         }
 
         /* 3. 입력창 힌트 꾸미기 */
